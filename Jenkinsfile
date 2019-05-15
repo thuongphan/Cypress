@@ -1,6 +1,6 @@
 #!groovy
 
-agent any
+node('master_node') {
     try {
         stages {
             stage('Checkout'){
@@ -12,3 +12,4 @@ agent any
         currentBuild.result = "FAILURE"
         throw err
     }
+}

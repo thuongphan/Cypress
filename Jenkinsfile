@@ -1,6 +1,6 @@
 pipeline {
-    def repositoryUrl    = "https://github.dev.cybozu.co.jp/garoon/garoon.git" 
-    def branch           = "master" 
+    def repositoryUrl = "https://github.com/thuongphan/Cypress.git" 
+    def branch = "master" 
     
     agent any
 

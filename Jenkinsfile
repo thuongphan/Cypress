@@ -1,16 +1,14 @@
 #!groovy
 
 node('Jenkins_pipeline') {
-
-    def repositoryUrl = "https://github.com/thuongphan/Cypress.git" 
-    def branch = "master" 
-    
+ 
     agent any
     try {
         stages {
-            stage('Checkout') { 
-                git url: repositoryUrl, branch: branch 
-            }
+            stage('Checkout'){
+
+                checkout scm
+            }    
         }
     } catch (err) {
 

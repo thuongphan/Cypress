@@ -9,9 +9,6 @@ node('master_node') {
                 echo 'Running unit tests'
             }
             stage('Running UI tests') {
-                when {
-                    branch "master"
-                }
                 steps {
                     echo 'Running unit tests'
                     sh 'cd Cypress'

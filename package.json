@@ -1,0 +1,25 @@
+{
+  "name": "cypress_practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thuongphan/Cypress.git"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "thuong phan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thuongphan/Cypress/issues"
+  },
+  "homepage": "https://github.com/thuongphan/Cypress#readme",
+  "devDependencies": {
+    "cypress": "^3.2.0"
+  }
+}

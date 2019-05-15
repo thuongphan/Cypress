@@ -1,8 +1,6 @@
 #!groovy
 
-node('Jenkins_pipeline') {
- 
-    agent any
+agent any
     try {
         stages {
             stage('Checkout'){
@@ -11,8 +9,6 @@ node('Jenkins_pipeline') {
             }    
         }
     } catch (err) {
-
         currentBuild.result = "FAILURE"
         throw err
     }
-}

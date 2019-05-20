@@ -22,11 +22,13 @@ node('master_node') {
         throw err
     } finally {
         // Success or failure, always send notifications
-        notifyBuild(currentBuild.result)
+         //notifyBuild(currentBuild.result)
+         slackSend(channel: '#qa_jenkins_noti', color: '#00FF00', message: "blabla")
+
   }
 }
 
-def notifyBuild(String buildStatus = 'STARTED') {
+/*def notifyBuild(String buildStatus = 'STARTED') {
   // build status of null means successful
   buildStatus =  buildStatus ?: 'SUCCESSFUL'
 
@@ -49,5 +51,5 @@ def notifyBuild(String buildStatus = 'STARTED') {
   }
 
   // Send notifications
-  slackSend(channel: '#qa_jenkins_noti', color: '#00FF00', message: "blabla")
-}
+  slackSend (channel: '#qa_jenkins_noti', color: '#00FF00', message: "blabla")
+}*/

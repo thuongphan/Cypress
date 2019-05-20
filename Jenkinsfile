@@ -2,9 +2,6 @@
 
 node('master_node') {
     try {
-            options {
-                buildDiscarder(logRotator(numToKeepStr: '10'))
-            }
             stage('Checkout Git repository') {
                 checkout scm
             }
